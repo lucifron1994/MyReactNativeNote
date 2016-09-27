@@ -18,9 +18,33 @@ target 不是self了
 
 ☀︎
 
+```
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    [self.textView becomeFirstResponder];
+}
+```
+
+
+
 
 
 Xcode8 创建的xib不向下兼容
 
 textView做placeholder时候重写drawRect，但在更改textView高度约束后，drawRect中绘制的文字会消失，需要调整尺寸后调用setNeedDisplay
 
+
+
+TextView 需要先设置文字后设置居中才会正常
+
+        messageTextView.textAlignment = NSTextAlignmentCenter;
+
+
+
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+
+    [self.searchBar becomeFirstResponder];
+  }
