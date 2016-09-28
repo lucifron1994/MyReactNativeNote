@@ -1,5 +1,15 @@
 Develop Note 16-9-20
 
+
+
+CAAnimation 
+
+http://www.cocoachina.com/ios/20160919/17592.html
+
+
+
+
+
 工厂方法内：
 
 ```objective-c
