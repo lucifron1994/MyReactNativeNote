@@ -58,3 +58,29 @@ TextView 需要先设置文字后设置居中才会正常
 
     [self.searchBar becomeFirstResponder];
   }
+
+
+
+cell选中背景色重置
+
+```
+-(void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    
+    UIColor *originColor = [UIColor orangeColor];
+    
+    [super setSelected:selected animated:animated];
+    self.cellView.applyButton.backgroundColor = originColor;
+    
+}
+
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated {
+    
+    UIColor *originColor = [UIColor orangeColor];
+    
+    [super setHighlighted:highlighted animated:animated];
+    
+    self.cellView.applyButton.backgroundColor = originColor;
+    
+}
+```
+
